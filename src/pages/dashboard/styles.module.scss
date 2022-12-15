@@ -1,0 +1,77 @@
+.container {
+  max-width: 720px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerHeader {
+  display: flex;
+  flex-direction: row;
+
+  button {
+    background: transparent;
+    border: 0;
+    margin-left: 1rem;
+    transition: 0.5s;
+    margin-top: 5px;
+
+    svg:hover {
+      animation: animate 2s infinite;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.listOrder {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.orderItem {
+  display: flex;
+  flex-direction: row;
+  background: var(--dark-900);
+  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  button {
+    border: 0;
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--white);
+    height: 60px;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+    &:hover {
+      font-size: 1.3rem;
+      color: var(--green-900);
+    }
+  }
+}
+
+.tag {
+  width: 9px;
+  background: var(--green-900);
+  height: 60px;
+  border-radius: 6px 0 0 6px;
+  margin-right: 1rem;
+}
+
+.emptyList {
+  font-size: 1.2rem;
+  color: var(--gray-100);
+}
+
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

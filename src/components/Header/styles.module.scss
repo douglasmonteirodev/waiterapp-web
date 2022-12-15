@@ -1,0 +1,59 @@
+.headerContainer {
+  height: 5rem;
+}
+
+.headerContent {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.areaImg {
+  width: 250px;
+
+  img {
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.menuNav {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: var(--white);
+    padding: 0 0.5rem;
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+    cursor: pointer;
+
+    & + a {
+      margin-left: 2rem;
+    }
+
+    &:hover {
+      color: var(--red-900);
+    }
+  }
+
+  button {
+    margin-left: 2rem;
+    background: transparent;
+    border: none;
+    transition: 0.8s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
+
+    svg:hover {
+      filter: invert(55%) sepia(51%) saturate(2878%) hue-rotate(0deg)
+        brightness(104%) contrast(97%);
+    }
+  }
+}
